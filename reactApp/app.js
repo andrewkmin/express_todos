@@ -7,7 +7,7 @@ const toggle = (t, action) => { return action.id === t.id ? Object.assign({},t,{
 const todos = (state = [], action) => {
   switch(action.type) {
     case 'ADD_TODO':
-      return [...state, {id: action.id, text: action.text, completed: false} ];
+      return [...state, { id: action.id, text: action.text, completed: false } ];
     case 'TOGGLE_TODO':
       return state.map(t => toggle(t, action));
     default:
