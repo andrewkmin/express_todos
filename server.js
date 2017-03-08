@@ -9,5 +9,5 @@ app.get('/', function(req, res) {
 })
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log('running at port: ' process.env.PORT || '3000')
+  console.log('running at port: ' + process.env.PORT || '3000')
 })
